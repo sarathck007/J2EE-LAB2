@@ -47,7 +47,6 @@ public class SocketQuoteServlet extends HttpServlet {
 		if (requiredQuantity < 0) {
 			isValidDataEntered = false;
 		}
-		calculateQuote(socketType, requiredQuantity);
 		response.setContentType("text/html");
 		response.getWriter().println("<html><body>");
 		if (isValidDataEntered) {
